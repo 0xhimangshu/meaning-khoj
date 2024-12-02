@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Word Definition Lookup",
+  "version": "1.0",
+  "description": "Shows word definitions when text is selected",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.dictionaryapi.dev/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["content/content.css"],
+      "js": ["content/content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+} 
