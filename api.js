@@ -6,10 +6,10 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({
-    origin: /chrome-extension:\/\/.*/,
-    methods: ['POST']
-}));
+// app.use(cors({
+//     origin: /chrome-extension:\/\/.*/,
+//     methods: ['POST']
+// }));
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
