@@ -1,0 +1,18 @@
+{
+  "name": "meaning-anywhere-api",
+  "version": "1.0.0",
+  "description": "API server for Meaning Anywhere Chrome extension",
+  "main": "api.js",
+  "scripts": {
+    "start": "node api.js",
+    "dev": "nodemon api.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
